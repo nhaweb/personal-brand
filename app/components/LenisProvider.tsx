@@ -3,6 +3,13 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
+declare global {
+  interface Window {
+    /** Set by LenisProvider so any component can drive smooth scrolling. */
+    __lenis?: Lenis;
+  }
+}
+
 export default function LenisProvider({
   children,
 }: {
@@ -21,6 +28,7 @@ export default function LenisProvider({
       smoothWheel: true,
       touchMultiplier: 1.4,
     });
+    window.__lenis = lenis;
 
     let frame = 0;
     const raf = (time: number) => {
@@ -32,6 +40,7 @@ export default function LenisProvider({
     return () => {
       cancelAnimationFrame(frame);
       lenis.destroy();
+      window.__lenis = undefined;
     };
   }, []);
 

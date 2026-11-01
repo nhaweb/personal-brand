@@ -1,8 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Reveal() {
+  // Re-run per route so [data-reveal] nodes on newly navigated pages animate.
+  const pathname = usePathname();
+
   useEffect(() => {
     const nodes = Array.from(
       document.querySelectorAll<HTMLElement>("[data-reveal]"),
@@ -42,7 +46,7 @@ export default function Reveal() {
     });
 
     return () => io.disconnect();
-  }, []);
+  }, [pathname]);
 
   return null;
 }

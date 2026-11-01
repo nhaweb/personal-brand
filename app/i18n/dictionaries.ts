@@ -54,11 +54,28 @@ export type Dictionary = {
   work: {
     title: string;
     lead: string;
+    detail: {
+      back: string;
+      client: string;
+      year: string;
+      services: string;
+      overview: string;
+      outcome: string;
+      process: string;
+      more: string;
+    };
     items: {
+      slug: string;
       name: string;
       blurb: string;
       alt: string;
       image: string;
+      client: string;
+      year: string;
+      tags: string[];
+      overview: string[];
+      stats: { value: string; label: string }[];
+      phases: { title: string; body: string }[];
     }[];
   };
   band: {
@@ -109,8 +126,23 @@ export type Dictionary = {
     title: string;
     lead: string;
   };
+  contact: {
+    title: string;
+    lead: string;
+    emailLabel: string;
+    socialLabel: string;
+    availability: string;
+    availabilityValue: string;
+    response: string;
+  };
   footer: {
     legal: string;
+    backToTop: string;
+  };
+  notFound: {
+    title: string;
+    body: string;
+    back: string;
   };
 };
 
@@ -166,46 +198,218 @@ const en: Dictionary = {
   work: {
     title: "Selected Work.",
     lead: "A short ledger of launches, trials, and enablement, each one aimed at a pipeline that needed to move.",
+    detail: {
+      back: "All work",
+      client: "Client",
+      year: "Year",
+      services: "Services",
+      overview: "The brief.",
+      outcome: "What moved.",
+      process: "How it ran.",
+      more: "More work.",
+    },
     items: [
       {
+        slug: "northline-launch",
         name: "Northline launch",
         blurb:
           "Go-to-market story and demand path for a product that needed quieter proof, not louder ads.",
         alt: "Launch desk with storyboards and a bright orange note for Northline",
         image: "/images/ai/work-northline.jpg",
+        client: "Northline Logistics",
+        year: "2025",
+        tags: ["Positioning", "Launch narrative", "Demand path"],
+        overview: [
+          "Northline had a product that performed quietly and a market that only noticed volume. The brief was to make proof, not noise, the story.",
+          "We rebuilt the offer around what operations teams could verify in the first week, then mapped a demand path that led with evidence instead of adjectives.",
+        ],
+        stats: [
+          { value: "3×", label: "Qualified pipeline in two quarters" },
+          { value: "11 days", label: "Median time to first call" },
+          { value: "42%", label: "Of launches sourced from proof content" },
+        ],
+        phases: [
+          {
+            title: "Name the proof",
+            body: "Interviews with eight operations leads turned scattered wins into one verifiable claim the whole company could repeat.",
+          },
+          {
+            title: "Build the path",
+            body: "A single offer page, a proof pack, and a four-step outreach cadence — each step handing sales something the prospect could check.",
+          },
+          {
+            title: "Launch and listen",
+            body: "We shipped in weekly increments, watched which claims carried calls, and cut everything that only carried clicks.",
+          },
+        ],
       },
       {
+        slug: "quiet-room-trial",
         name: "Quiet Room trial",
         blurb:
           "Trial funnel and nurture that kept the offer calm while the pipeline stayed warm.",
         alt: "Sunlit quiet meeting room used for the Quiet Room trial mood",
         image: "/images/ai/work-quiet-room.jpg",
+        client: "Quiet Room",
+        year: "2025",
+        tags: ["Trial funnel", "Nurture", "Lifecycle copy"],
+        overview: [
+          "A calm product with a leaky trial: people signed up, looked around, and left before the value landed. The fix was pacing, not persuasion.",
+          "We redesigned the first ten days so every message arrived exactly when the product had earned the right to say something.",
+        ],
+        stats: [
+          { value: "+38%", label: "Trial-to-paid conversion" },
+          { value: "6", label: "Messages in the core nurture" },
+          { value: "−24%", label: "Unsubscribes during trial" },
+        ],
+        phases: [
+          {
+            title: "Map the drop-off",
+            body: "We followed fifty trial accounts day by day and found the quiet moments where momentum died — usually right after a feature they never asked for.",
+          },
+          {
+            title: "Slow the pitch",
+            body: "Three of seven emails were cut. The rest were rewritten to arrive after a milestone, not on a schedule.",
+          },
+          {
+            title: "Guard the tone",
+            body: "A one-page voice guide kept every follow-up as calm as the product itself, even after handoff.",
+          },
+        ],
       },
       {
+        slug: "atlas-partner-day",
         name: "Atlas partner day",
         blurb:
           "Sales enablement kit and day-of narrative for partners bringing new accounts in.",
         alt: "Open terrace under blue sky for Atlas partner day",
         image: "/images/ai/work-atlas.jpg",
+        client: "Atlas Cloud",
+        year: "2024",
+        tags: ["Partner kit", "Demo script", "Event narrative"],
+        overview: [
+          "Atlas's partner day had slides and swag but no spine. Partners left entertained and unsure what to sell on Monday.",
+          "We wrote one narrative for the day and hung every kit, script, and talk on it — so partners left with a story they could retell.",
+        ],
+        stats: [
+          { value: "57", label: "Partners trained in one day" },
+          { value: "2.4×", label: "Partner-sourced demos next quarter" },
+          { value: "9 min", label: "Average demo, down from 25" },
+        ],
+        phases: [
+          {
+            title: "One spine",
+            body: "A three-line storyline — problem, proof, first step — that every slide and one-pager had to serve.",
+          },
+          {
+            title: "Kits that fit the call",
+            body: "Each partner kit fit inside a real sales call: open, show, prove, next step. Nothing needed a second meeting to explain.",
+          },
+          {
+            title: "Rehearse the retell",
+            body: "Partners practiced the story on each other before lunch. If it survived that retelling, it was ready.",
+          },
+        ],
       },
       {
+        slug: "signal-desk-refresh",
         name: "Signal desk refresh",
         blurb: "Lifecycle rewrite for a desk team stuck between alerts and answers.",
         alt: "Night operations desk with soft monitors for Signal desk refresh",
         image: "/images/ai/work-signal.jpg",
+        client: "Signal",
+        year: "2024",
+        tags: ["Lifecycle", "Messaging", "Handoff"],
+        overview: [
+          "Signal's desk team lived between two failures: alerts nobody read and answers that arrived too late. The words in between were the bottleneck.",
+          "We rewrote the lifecycle end to end — fewer alerts, plainer answers, and a handoff that told sales what already happened instead of asking.",
+        ],
+        stats: [
+          { value: "−31%", label: "Alert volume, same coverage" },
+          { value: "90 sec", label: "Median alert-to-answer" },
+          { value: "4", label: "Handoff fields sales actually reads" },
+        ],
+        phases: [
+          {
+            title: "Audit the noise",
+            body: "Two weeks of shadowing showed which alerts changed decisions and which only changed screens.",
+          },
+          {
+            title: "Rewrite in verbs",
+            body: "Every lifecycle message now starts with what to do, carries its own evidence, and names the owner.",
+          },
+          {
+            title: "Tighten the handoff",
+            body: "The brief to sales shrank to four fields that always matter. Anything else became an optional note.",
+          },
+        ],
       },
       {
+        slug: "paper-route-relaunch",
         name: "Paper Route relaunch",
         blurb: "Brand story and launch sequence for a small team returning to market.",
         alt: "Printed brand materials and an orange seal for Paper Route",
         image: "/images/ai/work-paper-route.jpg",
+        client: "Paper Route",
+        year: "2023",
+        tags: ["Brand story", "Launch cadence", "Offer page"],
+        overview: [
+          "A small team returning to market after a quiet year. The risk was sounding like a comeback; the goal was sounding like continuity.",
+          "We told the return as the next issue, not the new issue — same promise, sharper proof, and a launch cadence that respected old readers.",
+        ],
+        stats: [
+          { value: "68%", label: "Of lapsed readers re-engaged" },
+          { value: "12 days", label: "From announce to first sale" },
+          { value: "1", label: "Offer page, five sections, no carousel" },
+        ],
+        phases: [
+          {
+            title: "Find the through-line",
+            body: "Archived issues showed the promise had never changed — only the proof had grown. We led with that.",
+          },
+          {
+            title: "Sequence the return",
+            body: "A four-note cadence: remember, show, invite, open. Each note earned the next.",
+          },
+          {
+            title: "Ship one page",
+            body: "The relaunch lived on a single page that answered every question a lapsed reader had, in order.",
+          },
+        ],
       },
       {
+        slug: "harbor-field-notes",
         name: "Harbor field notes",
         blurb:
           "Field narrative and follow-up system for a sales crew that lives on the road.",
         alt: "Harbor road at golden hour for Harbor field notes",
         image: "/images/ai/work-harbor.jpg",
+        client: "Harbor",
+        year: "2023",
+        tags: ["Field narrative", "Follow-up system", "Playbook"],
+        overview: [
+          "Harbor's sales crew lived on the road and their follow-ups lived nowhere. Good conversations evaporated between visits.",
+          "We built a field-notes system: a two-minute structure for capturing what a buyer actually said, and a route for where each note went next.",
+        ],
+        stats: [
+          { value: "82%", label: "Visits with a same-day note" },
+          { value: "2×", label: "Second meetings booked" },
+          { value: "3 min", label: "To file a note from a cab" },
+        ],
+        phases: [
+          {
+            title: "Ride along",
+            body: "A week on the road made the constraint obvious: any system longer than a voicemail was dead on arrival.",
+          },
+          {
+            title: "Two-minute format",
+            body: "Three prompts — heard, risk, next — turned a conversation into a note before the engine cooled.",
+          },
+          {
+            title: "Route the notes",
+            body: "Notes flowed to the one person who could act, with a line already drafted. Follow-up stopped depending on memory.",
+          },
+        ],
       },
     ],
   },
@@ -310,9 +514,24 @@ const en: Dictionary = {
     title: "Let's Work Together.",
     lead: "Tell me the offer, the audience, and the next ninety days. I will answer with a clear yes, no, or not yet.",
   },
+  contact: {
+    title: "Let's talk.",
+    lead: "Tell me the offer, the audience, and the next ninety days. The form lands in my inbox, and I answer with a clear yes, no, or not yet.",
+    emailLabel: "Prefer email?",
+    socialLabel: "Elsewhere",
+    availability: "Availability",
+    availabilityValue: "Booking projects for next quarter",
+    response: "Replies within two working days.",
+  },
   footer: {
     legal:
-      "Imagery generated as stand-ins. Replace with your own portraits and campaign stills when ready. © 2026",
+      "© 2026",
+    backToTop: "Back to top",
+  },
+  notFound: {
+    title: "Page not found.",
+    body: "The page you are looking for moved, or never shipped. The work ledger is the best place to pick the trail back up.",
+    back: "Back to all work",
   },
 };
 
@@ -368,48 +587,220 @@ const vi: Dictionary = {
   work: {
     title: "Dự án tiêu biểu.",
     lead: "Một nhật ký ngắn về các lần ra mắt, thử nghiệm và hỗ trợ bán hàng — mỗi hạng mục nhằm vào một đường dẫn khách hàng cần được đẩy tới.",
+    detail: {
+      back: "Tất cả dự án",
+      client: "Khách hàng",
+      year: "Năm",
+      services: "Dịch vụ",
+      overview: "Bài toán đặt ra.",
+      outcome: "Kết quả.",
+      process: "Cách triển khai.",
+      more: "Dự án khác.",
+    },
     items: [
       {
+        slug: "northline-launch",
         name: "Northline launch",
         blurb:
           "Câu chuyện ra thị trường và lộ trình tạo nhu cầu cho sản phẩm cần bằng chứng vững hơn, không phải quảng cáo to hơn.",
         alt: "Bàn ra mắt với storyboard và ghi chú cam nổi bật cho Northline",
         image: "/images/ai/work-northline.jpg",
+        client: "Northline Logistics",
+        year: "2025",
+        tags: ["Định vị", "Tường thuật ra mắt", "Lộ trình nhu cầu"],
+        overview: [
+          "Northline có một sản phẩm vận hành thầm lặng, trong khi thị trường chỉ chú ý tới sự ồn ào. Bài toán đặt ra: để bằng chứng — chứ không phải tiếng ồn — trở thành câu chuyện.",
+          "Chúng tôi xây dựng lại đề xuất dựa trên những gì đội vận hành có thể tự kiểm chứng trong tuần đầu tiên, rồi vẽ lộ trình nhu cầu dẫn bằng câu dẫn bằng chứng thay vì tính từ.",
+        ],
+        stats: [
+          { value: "3×", label: "Pipeline đủ điều kiện trong hai quý" },
+          { value: "11 ngày", label: "Thời gian trung bình tới cuộc gọi đầu tiên" },
+          { value: "42%", label: "Lượt ra mắt đến từ nội dung bằng chứng" },
+        ],
+        phases: [
+          {
+            title: "Đặt tên cho bằng chứng",
+            body: "Phỏng vấn tám quản lý vận hành biến những thắng lợi rời rạc thành một tuyên bố có thể kiểm chứng mà cả công ty nhắc lại được.",
+          },
+          {
+            title: "Dựng lộ trình",
+            body: "Một trang đề xuất, một gói bằng chứng và nhịp tiếp cận bốn bước — mỗi bước đưa sales thứ gì đó prospect có thể tự xác nhận.",
+          },
+          {
+            title: "Ra mắt và lắng nghe",
+            body: "Chúng tôi triển khai theo tuần, quan sát tuyên bố nào mang lại cuộc gọi thật, và cắt mọi thứ chỉ mang lại cú nhấp.",
+          },
+        ],
       },
       {
+        slug: "quiet-room-trial",
         name: "Quiet Room trial",
         blurb:
           "Phễu dùng thử và nurture giữ đề xuất êm dịu, trong khi đường dẫn khách hàng vẫn nóng.",
         alt: "Phòng họp yên tĩnh, ánh sáng ban ngày — mood cho Quiet Room trial",
         image: "/images/ai/work-quiet-room.jpg",
+        client: "Quiet Room",
+        year: "2025",
+        tags: ["Phễu dùng thử", "Nurture", "Nội dung vòng đời"],
+        overview: [
+          "Một sản phẩm êm dịu với phễu dùng thử đang rò rỉ: người dùng đăng ký, nhìn quanh, rồi rời đi trước khi giá trị kịp hiện ra. Cách sửa là nhịp điệu, không phải thuyết phục.",
+          "Chúng tôi thiết kế lại mười ngày đầu tiên để mỗi thông điệp đến đúng lúc sản phẩm vừa đủ xứng đáng để lên tiếng.",
+        ],
+        stats: [
+          { value: "+38%", label: "Tỷ lệ dùng thử chuyển thành trả phí" },
+          { value: "6", label: "Thông điệp trong nurture cốt lõi" },
+          { value: "−24%", label: "Lượt hủy đăng ký trong giai đoạn dùng thử" },
+        ],
+        phases: [
+          {
+            title: "Vẽ bản đồ điểm rơi",
+            body: "Chúng tôi theo năm mươi tài khoản dùng thử từng ngày và tìm thấy những khoảng lặng nơi đà tăng chết — thường ngay sau một tính năng họ chưa từng cần.",
+          },
+          {
+            title: "Chậm lời chào hàng",
+            body: "Ba trong bảy email bị cắt. Phần còn lại được viết lại để đến sau một cột mốc, chứ không theo lịch cố định.",
+          },
+          {
+            title: "Giữ giọng điệu",
+            body: "Một trang hướng dẫn giọng nói giữ mọi bước theo dõi êm dịu như chính sản phẩm, kể cả sau khi bàn giao.",
+          },
+        ],
       },
       {
+        slug: "atlas-partner-day",
         name: "Atlas partner day",
         blurb:
           "Bộ tài liệu hỗ trợ bán hàng và kịch bản trong ngày dành cho đối tác mang tài khoản mới về.",
         alt: "Sân thượng mở dưới bầu trời xanh cho Atlas partner day",
         image: "/images/ai/work-atlas.jpg",
+        client: "Atlas Cloud",
+        year: "2024",
+        tags: ["Bộ đối tác", "Kịch bản demo", "Tường thuật sự kiện"],
+        overview: [
+          "Ngày hội đối tác của Atlas có slide và quà tặng nhưng thiếu trục xương sống. Đối tác ra về trong sự thích thú, còn băn khoăn thứ Hai sẽ bán gì.",
+          "Chúng tôi viết một tường thuật duy nhất cho cả ngày và treo mọi bộ tài liệu, kịch bản, bài phát biểu lên nó — để đối tác ra về với một câu chuyện có thể kể lại.",
+        ],
+        stats: [
+          { value: "57", label: "Đối tác được đào tạo trong một ngày" },
+          { value: "2.4×", label: "Demo từ đối tác trong quý tiếp theo" },
+          { value: "9 phút", label: "Demo trung bình, giảm từ 25 phút" },
+        ],
+        phases: [
+          {
+            title: "Một trục duy nhất",
+            body: "Mạch ba dòng — vấn đề, bằng chứng, bước đầu tiên — mà mọi slide và one-pager đều phải phục vụ.",
+          },
+          {
+            title: "Bộ tài liệu vừa cuộc gọi",
+            body: "Mỗi bộ đối tác nằm gọn trong một cuộc gọi sales thật: mở, trình bày, chứng minh, bước tiếp theo. Không thứ nào cần cuộc họp thứ hai để giải thích.",
+          },
+          {
+            title: "Tập kể lại",
+            body: "Các đối tác tập kể câu chuyện cho nhau trước giờ trưa. Câu chuyện sống sót qua lần kể lại đó nghĩa là đã sẵn sàng.",
+          },
+        ],
       },
       {
+        slug: "signal-desk-refresh",
         name: "Signal desk refresh",
         blurb:
           "Viết lại hành trình vòng đời cho đội vận hành đang kẹt giữa cảnh báo và câu trả lời.",
         alt: "Bàn vận hành ban đêm với màn hình dịu ánh cho Signal desk refresh",
         image: "/images/ai/work-signal.jpg",
+        client: "Signal",
+        year: "2024",
+        tags: ["Vòng đời", "Hệ thông điệp", "Bàn giao"],
+        overview: [
+          "Đội vận hành của Signal sống giữa hai thất bại: cảnh báo không ai đọc và câu trả lời đến quá muộn. Những con chữ ở giữa chính là điểm nghẽn.",
+          "Chúng tôi viết lại toàn bộ vòng đời — ít cảnh báo hơn, câu trả lời rõ ràng hơn, và một bước bàn giao nói cho sales biết điều đã xảy ra thay vì phải hỏi.",
+        ],
+        stats: [
+          { value: "−31%", label: "Lượng cảnh báo, độ phủ giữ nguyên" },
+          { value: "90 giây", label: "Thời gian trung bình từ cảnh báo tới câu trả lời" },
+          { value: "4", label: "Trường bàn giao mà sales thực sự đọc" },
+        ],
+        phases: [
+          {
+            title: "Kiểm toán tiếng ồn",
+            body: "Hai tuần ngồi cùng đội cho thấy cảnh báo nào thay đổi quyết định và cảnh báo nào chỉ thay đổi màn hình.",
+          },
+          {
+            title: "Viết lại bằng động từ",
+            body: "Mọi thông điệp vòng đời giờ bắt đầu bằng việc cần làm, tự mang theo bằng chứng, và nêu rõ người phụ trách.",
+          },
+          {
+            title: "Siết bước bàn giao",
+            body: "Brief cho sales gọn lại còn bốn trường luôn quan trọng. Mọi thứ khác thành ghi chú tùy chọn.",
+          },
+        ],
       },
       {
+        slug: "paper-route-relaunch",
         name: "Paper Route relaunch",
         blurb:
           "Câu chuyện thương hiệu và chuỗi bước ra mắt cho đội nhỏ quay lại thị trường.",
         alt: "Ấn phẩm thương hiệu in và dấu niêm phong cam cho Paper Route",
         image: "/images/ai/work-paper-route.jpg",
+        client: "Paper Route",
+        year: "2023",
+        tags: ["Câu chuyện thương hiệu", "Nhịp ra mắt", "Trang đề xuất"],
+        overview: [
+          "Một đội nhỏ quay lại thị trường sau một năm im lặng. Rủi ro là nghe như một màn trở lại; mục tiêu là nghe như một sự liên tục.",
+          "Chúng tôi kể cuộc quay lại như số tiếp theo, chứ không phải số mới — cùng lời hứa, bằng chứng sắc hơn, và nhịp ra mắt tôn trọng độc giả cũ.",
+        ],
+        stats: [
+          { value: "68%", label: "Độc giả cũ được kết nối lại" },
+          { value: "12 ngày", label: "Từ công bố tới đơn hàng đầu tiên" },
+          { value: "1", label: "Trang đề xuất, năm phần, không carousel" },
+        ],
+        phases: [
+          {
+            title: "Tìm mạch xuyên suốt",
+            body: "Những số báo cũ cho thấy lời hứa chưa từng đổi — chỉ có bằng chứng là lớn dần. Chúng tôi dẫn đầu bằng điều đó.",
+          },
+          {
+            title: "Xếp nhịp trở lại",
+            body: "Nhịp bốn nốt: nhớ lại, cho thấy, mời gọi, mở cửa. Mỗi nốt xứng đáng với nốt kế tiếp.",
+          },
+          {
+            title: "Đóng gói một trang",
+            body: "Toàn bộ màn ra mắt sống trên một trang duy nhất, lần lượt trả lời mọi câu hỏi của độc giả cũ.",
+          },
+        ],
       },
       {
+        slug: "harbor-field-notes",
         name: "Harbor field notes",
         blurb:
           "Tường thuật thực địa và hệ thống theo dõi dành cho đội bán hàng sống trên đường.",
         alt: "Đường ven cảng lúc giờ vàng cho Harbor field notes",
         image: "/images/ai/work-harbor.jpg",
+        client: "Harbor",
+        year: "2023",
+        tags: ["Tường thuật thực địa", "Hệ thống theo dõi", "Playbook"],
+        overview: [
+          "Đội sales của Harbor sống trên đường và các bước theo dõi của họ không sống ở đâu cả. Những cuộc trò chuyện tốt bốc hơi giữa các chuyến đi.",
+          "Chúng tôi dựng hệ thống ghi chú thực địa: một cấu trúc hai phút để ghi lại điều buyer thực sự nói, và một lộ trình cho mỗi ghi chú tiếp theo đi đâu.",
+        ],
+        stats: [
+          { value: "82%", label: "Lượt ghé thăm có ghi chú trong ngày" },
+          { value: "2×", label: "Cuộc họp thứ hai được đặt lịch" },
+          { value: "3 phút", label: "Để lưu một ghi chú trên xe" },
+        ],
+        phases: [
+          {
+            title: "Đi cùng thực địa",
+            body: "Một tuần trên đường cho thấy giới hạn rõ ràng: hệ thống nào dài hơn một tin nhắn thoại là chết từ trong trứng.",
+          },
+          {
+            title: "Cấu trúc hai phút",
+            body: "Ba câu hỏi — nghe được, rủi ro, bước tiếp — biến một cuộc trò chuyện thành ghi chú trước khi máy nguội.",
+          },
+          {
+            title: "Điều hướng ghi chú",
+            body: "Ghi chú chảy tới đúng một người có thể hành động, kèm dòng chữ đã soạn sẵn. Việc theo dõi không còn dựa vào trí nhớ.",
+          },
+        ],
       },
     ],
   },
@@ -534,9 +925,24 @@ const vi: Dictionary = {
     title: "Cùng làm việc.",
     lead: "Hãy cho tôi biết đề xuất, đối tượng và chín mươi ngày tới. Tôi sẽ trả lời rõ: có, không, hoặc chưa phải lúc.",
   },
+  contact: {
+    title: "Cùng trao đổi.",
+    lead: "Hãy cho tôi biết đề xuất, đối tượng và chín mươi ngày tới. Form sẽ gửi thẳng tới hộp thư của tôi, và tôi sẽ trả lời rõ: có, không, hoặc chưa phải lúc.",
+    emailLabel: "Thích gửi email?",
+    socialLabel: "Mạng xã hội",
+    availability: "Lịch làm việc",
+    availabilityValue: "Đang nhận dự án cho quý tới",
+    response: "Phản hồi trong vòng hai ngày làm việc.",
+  },
   footer: {
     legal:
       "Hình ảnh mang tính minh họa. Hãy thay bằng chân dung và ảnh chiến dịch thật khi sẵn sàng. © 2026",
+    backToTop: "Lên đầu trang",
+  },
+  notFound: {
+    title: "Không tìm thấy trang.",
+    body: "Trang bạn tìm đã đổi địa chỉ, hoặc chưa từng được triển khai. Danh sách dự án là nơi tốt nhất để tìm lại dấu vết.",
+    back: "Về tất cả dự án",
   },
 };
 

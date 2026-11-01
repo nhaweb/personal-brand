@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import BackToTop from "./components/BackToTop";
 import LenisProvider from "./components/LenisProvider";
 import Reveal from "./components/Reveal";
 import WorkCatchUp from "./components/WorkCatchUp";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Reveal />
             <WorkCatchUp />
             {children}
+            <BackToTop />
           </LenisProvider>
         </LocaleProvider>
       </body>

@@ -1,15 +1,13 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import Arrow from "./Arrow";
+import ContactForm from "./ContactForm";
 import LangSwitch from "./LangSwitch";
+import { socialLinks } from "./socialLinks";
 import { useLocale } from "../i18n/LocaleProvider";
-
-const socials = [
-  { href: "https://www.linkedin.com", label: "LinkedIn" },
-  { href: "mailto:hello@viet.studio", label: "Email" },
-  { href: "https://www.instagram.com", label: "Instagram" },
-];
 
 /** Match --t-overlay-out; keep scroll lock until the sheet finishes leaving. */
 const OVERLAY_OUT_MS = 420;
@@ -26,11 +24,11 @@ export default function SiteHeader() {
   const formTitleId = useId();
 
   const links = [
-    { href: "#work", label: t.nav.work },
-    { href: "#services", label: t.nav.services },
-    { href: "#resume", label: t.nav.resume },
-    { href: "#faq", label: t.nav.faq },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#work", label: t.nav.work },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#resume", label: t.nav.resume },
+    { href: "/#faq", label: t.nav.faq },
+    { href: "/contact", label: t.nav.contact },
   ];
 
   const scrollLocked = menuOpen || formOpen || menuLeaving || formLeaving;
@@ -132,40 +130,27 @@ export default function SiteHeader() {
     };
   }, []);
 
-  function submitContact(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const note = String(data.get("note") || "").trim();
-    const subject = encodeURIComponent(
-      name
-        ? t.form.subjectWithName.replace("{name}", name)
-        : t.form.subjectFallback,
-    );
-    const body = encodeURIComponent(
-      [`${t.form.mailName}: ${name}`, `${t.form.mailEmail}: ${email}`, "", note].join(
-        "\n",
-      ),
-    );
-    window.location.href = `mailto:hello@viet.studio?subject=${subject}&body=${body}`;
-  }
-
   return (
     <>
       <header className="site-header">
         <div className="site-header__bar wrap">
-          <a className="site-header__brand" href="#top">
-            <span className="site-header__mark" aria-hidden="true" />
-            PML
-          </a>
+          <Link className="site-header__brand" href="/#top" aria-label="PML">
+            <Image
+              className="site-header__logo"
+              src="/images/pml-logo-orange.png"
+              alt="PML"
+              width={763}
+              height={373}
+              priority
+            />
+          </Link>
 
           <nav className="site-header__socials" aria-label={t.nav.social}>
-            {socials.map((s) => (
+            {socialLinks.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
-                rel="noreferrer"
+                rel={s.href.startsWith("http") ? "noreferrer" : undefined}
                 target={s.href.startsWith("http") ? "_blank" : undefined}
               >
                 {s.label}
@@ -185,10 +170,10 @@ export default function SiteHeader() {
               <span className="site-header__burger" aria-hidden="true" />
               {t.nav.menu}
             </button>
-            <a className="btn btn--accent site-header__cta" href="#contact">
+            <Link className="btn btn--accent site-header__cta" href="/contact">
               {t.common.getInTouch}
               <Arrow />
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -219,7 +204,7 @@ export default function SiteHeader() {
         </div>
         <nav className="overlay__nav wrap" aria-label={t.nav.primary}>
           {links.map((link, i) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               style={
@@ -232,7 +217,7 @@ export default function SiteHeader() {
               onClick={closeMenu}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="overlay__foot wrap">
@@ -249,7 +234,7 @@ export default function SiteHeader() {
             {t.common.contactForm}
             <Arrow />
           </button>
-          <a className="text-link" href="mailto:hello@viet.studio">
+          <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
             {t.common.writeEmail}
           </a>
         </div>
@@ -275,24 +260,7 @@ export default function SiteHeader() {
             {t.nav.close}
           </button>
         </div>
-        <form className="contact-form wrap" onSubmit={submitContact}>
-          <label>
-            {t.form.name}
-            <input name="name" type="text" autoComplete="name" required />
-          </label>
-          <label>
-            {t.form.email}
-            <input name="email" type="email" autoComplete="email" required />
-          </label>
-          <label>
-            {t.form.note}
-            <textarea name="note" rows={5} required />
-          </label>
-          <button type="submit" className="btn btn--accent">
-            {t.form.send}
-            <Arrow />
-          </button>
-        </form>
+        <ContactForm className="wrap" />
       </div>
     </>
   );

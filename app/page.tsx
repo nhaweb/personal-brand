@@ -1,11 +1,25 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 import Arrow from "./components/Arrow";
 import BandVideo from "./components/BandVideo";
 import Fold from "./components/Fold";
+import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import { useLocale } from "./i18n/LocaleProvider";
+
+const Logo3D = dynamic(() => import("./components/Logo3D"), {
+  ssr: false,
+  loading: () => (
+    <div
+      className="h-64 w-full lg:h-[480px]"
+      aria-hidden="true"
+      style={{ touchAction: "pan-y" }}
+    />
+  ),
+});
 
 export default function Home() {
   const { t } = useLocale();
@@ -24,13 +38,13 @@ export default function Home() {
               {t.hero.lead}
             </p>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:hello@viet.studio">
+              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
                 {t.common.writeEmail}
               </a>
-              <a className="btn btn--accent" href="#contact">
+              <Link className="btn btn--accent" href="/contact">
                 {t.common.contactForm}
                 <Arrow />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -81,13 +95,13 @@ export default function Home() {
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:hello@viet.studio">
+              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
                 {t.common.writeEmail}
               </a>
-              <a className="btn btn--accent" href="#contact">
+              <Link className="btn btn--accent" href="/contact">
                 {t.common.contactForm}
                 <Arrow />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -99,7 +113,7 @@ export default function Home() {
                 data-reveal="rise"
                 data-i={String((i % 2) + 1)}
               >
-                <a className="work-card__link" href="#contact">
+                <Link className="work-card__link" href={`/work/${item.slug}`}>
                   <div className="media-shell work-card__media">
                     <Image
                       src={item.image}
@@ -117,7 +131,7 @@ export default function Home() {
                     {t.common.readMore}
                     <Arrow />
                   </span>
-                </a>
+                </Link>
               </article>
             ))}
           </div>
@@ -154,13 +168,13 @@ export default function Home() {
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:hello@viet.studio">
+              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
                 {t.common.writeEmail}
               </a>
-              <a className="btn btn--accent" href="#contact">
+              <Link className="btn btn--accent" href="/contact">
                 {t.common.contactForm}
                 <Arrow />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -201,13 +215,13 @@ export default function Home() {
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:hello@viet.studio">
+              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
                 {t.common.writeEmail}
               </a>
-              <a className="btn btn--accent" href="#contact">
+              <Link className="btn btn--accent" href="/contact">
                 {t.common.contactForm}
                 <Arrow />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -269,48 +283,32 @@ export default function Home() {
         </section>
 
         <section className="cta" id="contact" aria-labelledby="cta-heading">
-          <div className="wrap cta__inner">
-            <h2 className="cta__title" id="cta-heading" data-reveal>
-              {t.cta.title}
-            </h2>
-            <p className="gray max-36" data-reveal data-i="1">
-              {t.cta.lead}
-            </p>
-            <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:hello@viet.studio">
-                {t.common.writeEmail}
-              </a>
-              <a
-                className="btn btn--accent"
-                href="mailto:hello@viet.studio?subject=Project%20enquiry"
-              >
-                {t.common.contactForm}
-                <Arrow />
-              </a>
+          <div className="wrap cta__layout">
+            <div className="cta__inner">
+              <h2 className="cta__title" id="cta-heading" data-reveal>
+                {t.cta.title}
+              </h2>
+              <p className="gray max-36" data-reveal data-i="1">
+                {t.cta.lead}
+              </p>
+              <div className="button-row" data-reveal data-i="2">
+                <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+                  {t.common.writeEmail}
+                </a>
+                <Link className="btn btn--accent" href="/contact">
+                  {t.common.contactForm}
+                  <Arrow />
+                </Link>
+              </div>
+            </div>
+            <div className="cta__stage" data-reveal>
+              <Logo3D color="#ff7a00" />
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="site-footer">
-        <div className="wrap site-footer__nav">
-          <a href="#work">{t.nav.work}</a>
-          <a href="#services">{t.nav.services}</a>
-          <a href="#resume">{t.nav.resume}</a>
-          <a href="#faq">{t.nav.faq}</a>
-          <a href="#contact">{t.nav.contact}</a>
-        </div>
-        <div className="wrap site-footer__socials">
-          <a href="https://www.linkedin.com" rel="noreferrer" target="_blank">
-            LinkedIn
-          </a>
-          <a href="mailto:hello@viet.studio">Email</a>
-          <a href="https://www.instagram.com" rel="noreferrer" target="_blank">
-            Instagram
-          </a>
-        </div>
-        <p className="wrap site-footer__legal gray">{t.footer.legal}</p>
-      </footer>
+      <SiteFooter />
     </>
   );
 }

@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# design taste skill working files
+.taste-skill/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
