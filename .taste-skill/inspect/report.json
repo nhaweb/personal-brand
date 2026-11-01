@@ -1,0 +1,2525 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-27T04:54:18.221Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.25,
+    0.41,
+    0.4,
+    0.45,
+    0.48,
+    0.99,
+    0.28,
+    0.27,
+    0.2,
+    0.59,
+    0.99,
+    0.99
+   ],
+   "motion": {
+    "elements": 42,
+    "css": 2,
+    "transitions": 39,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 10360,
+     "screens": 11.5,
+     "words": 492,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fportrait-sq-wide.png&w=120",
+      "image?url=%2Fimages%2Fstage-3-wide.png&w=750&q=7",
+      "image?url=%2Fimages%2Fstage-2-wide.png&w=750&q=7",
+      "image?url=%2Fimages%2Fstage-4-wide.png&w=750&q=7",
+      "image?url=%2Fimages%2Fstage-1-wide.png&w=750&q=7",
+      "image?url=%2Fimages%2Fstage-foot-wide.png&w=750&",
+      "image?url=%2Fimages%2Farch-facade-wide.png&w=750",
+      "image?url=%2Fimages%2Farch-skyline-wide.png&w=19"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "chars": 28,
+     "lines": 2,
+     "size": 120,
+     "vw": 8.3,
+     "font": "Red Hat Display",
+     "weight": 900,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.64,
+     "top": 411,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "lines": 2,
+     "size": 120,
+     "font": "Red Hat Display"
+    },
+    "headings": [
+     {
+      "text": "Stories that move pipelines.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 411,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1177,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work.",
+      "words": 2,
+      "chars": 14,
+      "lines": 2,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 2036,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built for the messy middle.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 4541,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Services I Do.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 5651,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Brand story",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 5921,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Go-to-market",
+      "words": 1,
+      "chars": 12,
+      "lines": 2,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6061,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Demand & lifecycle",
+      "words": 3,
+      "chars": 18,
+      "lines": 2,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6284,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sales enablement",
+      "words": 2,
+      "chars": 16,
+      "lines": 2,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6507,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Resume, My Story.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 7072,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions.",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 8084,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Work Together.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 120,
+      "vw": 8.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 8810,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Việt",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 192,
+      "vw": 13.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 10027,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Red Hat Text",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "Red Hat Display",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      18,
+      19,
+      26,
+      88,
+      120,
+      192
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Red Hat Text",
+      "size": 19,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 192,
+      "vw": 13.3,
+      "font": "Red Hat Display",
+      "text": "Việt"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0efec",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.12,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f0efec",
+       "top": 85,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#e4e2dc",
+       "top": 1048,
+       "hsl": {
+        "h": 45,
+        "s": 0.13,
+        "l": 0.88
+       }
+      },
+      {
+       "color": "#ff6a00",
+       "top": 4381,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#121212",
+       "top": 8650,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56534c",
+       "share": 0.63
+      },
+      {
+       "color": "#121212",
+       "share": 0.25
+      },
+      {
+       "color": "#f0efed",
+       "share": 0.04
+      },
+      {
+       "color": "#f0efec",
+       "share": 0.04
+      },
+      {
+       "color": "#f0f0ec",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ff6a00",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#121212"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in Touch",
+      "Contact via Form"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 85,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "red hat display",
+     "red hat text",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 10360,
+    "margins": {
+     "left": 50,
+     "right": 98
+    },
+    "sections": [
+     {
+      "sel": "section.hero.chapter",
+      "tag": "section",
+      "top": 85,
+      "height": 828,
+      "words": 28,
+      "media": 0,
+      "middle": 154,
+      "heading": {
+       "text": "Stories that move pipelines.",
+       "size": 120,
+       "tag": "h1"
+      },
+      "left": 50,
+      "right": 98,
+      "textLeft": 50,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.chapter",
+      "tag": "section",
+      "top": 913,
+      "height": 963,
+      "words": 56,
+      "media": 1,
+      "middle": 47,
+      "heading": {
+       "text": "About",
+       "size": 88,
+       "tag": "h2"
+      },
+      "left": 113,
+      "right": 173,
+      "textLeft": 725,
+      "textRight": 173,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__intro",
+      "tag": "div",
+      "top": 2036,
+      "height": 321,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A short ledger of launches, trials, and enablement",
+       "size": 26,
+       "tag": "p"
+      },
+      "left": 146,
+      "right": 656,
+      "textLeft": 146,
+      "textRight": 656,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__grid",
+      "tag": "div",
+      "top": 2429,
+      "height": 1792,
+      "words": 112,
+      "media": 6,
+      "middle": 32,
+      "heading": {
+       "text": "Northline launch",
+       "size": 26,
+       "tag": "h3"
+      },
+      "left": 146,
+      "right": 146,
+      "textLeft": 146,
+      "textRight": 185,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.chapter",
+      "tag": "section",
+      "top": 4381,
+      "height": 1110,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built for the messy middle.",
+       "size": 88,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 108,
+      "textLeft": 146,
+      "textRight": 727,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services.chapter",
+      "tag": "section",
+      "top": 5491,
+      "height": 1421,
+      "words": 117,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Services I Do.",
+       "size": 120,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 212,
+      "textLeft": 146,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#resume.resume.chapter",
+      "tag": "section",
+      "top": 6912,
+      "height": 1012,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Resume, My Story.",
+       "size": 120,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 645,
+      "textLeft": 146,
+      "textRight": 645,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.chapter",
+      "tag": "section",
+      "top": 7924,
+      "height": 725,
+      "words": 128,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions.",
+       "size": 120,
+       "tag": "h2"
+      },
+      "left": 146,
+      "right": 151,
+      "textLeft": 146,
+      "textRight": 151,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.cta.chapter",
+      "tag": "section",
+      "top": 8650,
+      "height": 810,
+      "words": 32,
+      "media": 0,
+      "middle": 454,
+      "heading": {
+       "text": "Let's Work Together.",
+       "size": 120,
+       "tag": "h2"
+      },
+      "left": 50,
+      "right": 50,
+      "textLeft": 50,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.chapter",
+      "tag": "footer",
+      "top": 9460,
+      "height": 900,
+      "words": 38,
+      "media": 0,
+      "middle": 63,
+      "heading": null,
+      "left": 50,
+      "right": 274,
+      "textLeft": 50,
+      "textRight": 274,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stories that move pipelines.",
+      "size": 120,
+      "top": 411,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 146,
+      "n": 22
+     },
+     {
+      "x": 717,
+      "n": 7
+     },
+     {
+      "x": 736,
+      "n": 6
+     },
+     {
+      "x": 698,
+      "n": 5
+     },
+     {
+      "x": 50,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 44,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.27,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 1440,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.21,
+    0.87,
+    0.39,
+    0.56,
+    0.78,
+    0.5,
+    0.3,
+    0.79,
+    0.99,
+    0.99
+   ],
+   "motion": {
+    "elements": 42,
+    "css": 2,
+    "transitions": 39,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 9528,
+     "screens": 9.3,
+     "words": 492,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fportrait-sq-wide.png&w=120",
+      "image?url=%2Fimages%2Fstage-3-wide.png&w=828&q=7",
+      "image?url=%2Fimages%2Fstage-2-wide.png&w=828&q=7",
+      "image?url=%2Fimages%2Fstage-4-wide.png&w=828&q=7",
+      "image?url=%2Fimages%2Fstage-1-wide.png&w=828&q=7",
+      "image?url=%2Fimages%2Fstage-foot-wide.png&w=828&",
+      "image?url=%2Fimages%2Farch-facade-wide.png&w=828",
+      "image?url=%2Fimages%2Farch-skyline-wide.png&w=82"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "chars": 28,
+     "lines": 2,
+     "size": 76.8,
+     "vw": 10,
+     "font": "Red Hat Display",
+     "weight": 900,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.76,
+     "top": 635,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "lines": 2,
+     "size": 76.8,
+     "font": "Red Hat Display"
+    },
+    "headings": [
+     {
+      "text": "Stories that move pipelines.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.76,
+      "top": 635,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 2060,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work.",
+      "words": 2,
+      "chars": 14,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 2601,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built for the messy middle.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 4422,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Services I Do.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 5150,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Brand story",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 5353,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Go-to-market",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 5513,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Demand & lifecycle",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 5701,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sales enablement",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 5861,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Resume, My Story.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 6243,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions.",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 6998,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Work Together.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 7674,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Việt",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 138.2,
+      "vw": 18,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 9230,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Red Hat Text",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "Red Hat Display",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      18,
+      23,
+      58,
+      77,
+      138
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Red Hat Text",
+      "size": 17.9,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 80,
+     "max": {
+      "size": 138.2,
+      "vw": 18,
+      "font": "Red Hat Display",
+      "text": "Việt"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0efec",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.12,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f0efec",
+       "top": 85,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#e4e2dc",
+       "top": 1129,
+       "hsl": {
+        "h": 45,
+        "s": 0.13,
+        "l": 0.88
+       }
+      },
+      {
+       "color": "#ff6a00",
+       "top": 4330,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#121212",
+       "top": 7582,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56534c",
+       "share": 0.63
+      },
+      {
+       "color": "#121212",
+       "share": 0.25
+      },
+      {
+       "color": "#f0efed",
+       "share": 0.04
+      },
+      {
+       "color": "#f0efec",
+       "share": 0.04
+      },
+      {
+       "color": "#f0f0ec",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ff6a00",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#121212"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in Touch",
+      "Contact via Form"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 85,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "red hat display",
+     "red hat text",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 9528,
+    "margins": {
+     "left": 27,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section.hero.chapter",
+      "tag": "section",
+      "top": 85,
+      "height": 952,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 27,
+      "right": 201,
+      "textLeft": 27,
+      "textRight": 201,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.chapter",
+      "tag": "section",
+      "top": 1037,
+      "height": 1472,
+      "words": 56,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 27,
+      "right": 89,
+      "textLeft": 27,
+      "textRight": 89,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__intro",
+      "tag": "div",
+      "top": 2601,
+      "height": 230,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 27,
+      "right": 178,
+      "textLeft": 27,
+      "textRight": 178,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__grid",
+      "tag": "div",
+      "top": 2877,
+      "height": 1361,
+      "words": 112,
+      "media": 6,
+      "middle": 32,
+      "heading": {
+       "text": "Northline launch",
+       "size": 23,
+       "tag": "h3"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.chapter",
+      "tag": "section",
+      "top": 4330,
+      "height": 727,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built for the messy middle.",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 321,
+      "textLeft": 27,
+      "textRight": 321,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services.chapter",
+      "tag": "section",
+      "top": 5057,
+      "height": 1094,
+      "words": 117,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Services I Do.",
+       "size": 77,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 198,
+      "textLeft": 27,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#resume.resume.chapter",
+      "tag": "section",
+      "top": 6151,
+      "height": 755,
+      "words": 98,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Resume, My Story.",
+       "size": 77,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 134,
+      "textLeft": 27,
+      "textRight": 134,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.chapter",
+      "tag": "section",
+      "top": 6906,
+      "height": 676,
+      "words": 128,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions.",
+       "size": 77,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 128,
+      "textLeft": 27,
+      "textRight": 128,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.cta.chapter",
+      "tag": "section",
+      "top": 7582,
+      "height": 922,
+      "words": 32,
+      "media": 0,
+      "middle": 44,
+      "heading": {
+       "text": "Let's Work Together.",
+       "size": 77,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.chapter",
+      "tag": "footer",
+      "top": 8504,
+      "height": 1024,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 27,
+      "right": 122,
+      "textLeft": 27,
+      "textRight": 122,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stories that move pipelines.",
+      "size": 77,
+      "top": 635,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 27,
+      "n": 38
+     },
+     {
+      "x": 400,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 44,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.28,
+    0.75,
+    0.51,
+    0.67,
+    0.53,
+    0.73,
+    0.69,
+    0.46,
+    0.63,
+    0.99,
+    1
+   ],
+   "motion": {
+    "elements": 42,
+    "css": 2,
+    "transitions": 39,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9193,
+     "screens": 10.9,
+     "words": 484,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 12,
+     "sections": 8,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimages%2Fportrait-sq-wide.png&w=120",
+      "image?url=%2Fimages%2Fstage-3-wide.png&w=640&q=7",
+      "image?url=%2Fimages%2Fstage-2-wide.png&w=640&q=7",
+      "image?url=%2Fimages%2Fstage-4-wide.png&w=640&q=7",
+      "image?url=%2Fimages%2Fstage-1-wide.png&w=640&q=7",
+      "image?url=%2Fimages%2Fstage-foot-wide.png&w=640&",
+      "image?url=%2Fimages%2Farch-facade-wide.png&w=640",
+      "image?url=%2Fimages%2Farch-skyline-wide.png&w=64"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "chars": 28,
+     "lines": 2,
+     "size": 48.5,
+     "vw": 12.4,
+     "font": "Red Hat Display",
+     "weight": 900,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 476,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stories that move pipelines.",
+     "words": 4,
+     "lines": 2,
+     "size": 48.5,
+     "font": "Red Hat Display"
+    },
+    "headings": [
+     {
+      "text": "Stories that move pipelines.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 476,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1393,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work.",
+      "words": 2,
+      "chars": 14,
+      "lines": 2,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 1944,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Built for the messy middle.",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 4759,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Services I Do.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 5312,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Brand story",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5503,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Go-to-market",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5663,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Demand & lifecycle",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5823,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Sales enablement",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.035,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5983,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Resume, My Story.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 6362,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions.",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 7059,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's Work Together.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 48.5,
+      "vw": 12.4,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 7678,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Việt",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 70.2,
+      "vw": 18,
+      "font": "Red Hat Display",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 8965,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Red Hat Text",
+       "share": 0.86,
+       "mono": false
+      },
+      {
+       "family": "Red Hat Display",
+       "share": 0.14,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      17,
+      18,
+      20,
+      40,
+      49,
+      70
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Red Hat Text",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.3
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 70.2,
+      "vw": 18,
+      "font": "Red Hat Display",
+      "text": "Việt"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f0efec",
+     "bodyBgHsl": {
+      "h": 45,
+      "s": 0.12,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f0efec",
+       "top": 64,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#e4e2dc",
+       "top": 924,
+       "hsl": {
+        "h": 45,
+        "s": 0.13,
+        "l": 0.88
+       }
+      },
+      {
+       "color": "#ff6a00",
+       "top": 4671,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.5
+       }
+      },
+      {
+       "color": "#121212",
+       "top": 7590,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#56534c",
+       "share": 0.63
+      },
+      {
+       "color": "#121212",
+       "share": 0.25
+      },
+      {
+       "color": "#f0efed",
+       "share": 0.04
+      },
+      {
+       "color": "#f0efec",
+       "share": 0.04
+      },
+      {
+       "color": "#f0f0ec",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#ff6a00",
+      "hsl": {
+       "h": 25,
+       "s": 1,
+       "l": 0.5
+      },
+      "fg": "#121212"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Contact via Form"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "red hat display",
+     "red hat text",
+     "__nextjs-geist"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9193,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero.chapter",
+      "tag": "section",
+      "top": 64,
+      "height": 772,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Stories that move pipelines.",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 29,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about.chapter",
+      "tag": "section",
+      "top": 836,
+      "height": 1020,
+      "words": 56,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__intro",
+      "tag": "div",
+      "top": 1944,
+      "height": 197,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 37,
+      "textLeft": 20,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap.work__grid",
+      "tag": "div",
+      "top": 2181,
+      "height": 2401,
+      "words": 112,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "Northline launch",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.band.chapter",
+      "tag": "section",
+      "top": 4671,
+      "height": 553,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Built for the messy middle.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 46,
+      "textLeft": 20,
+      "textRight": 46,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.services.chapter",
+      "tag": "section",
+      "top": 5224,
+      "height": 1050,
+      "words": 117,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Services I Do.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 25,
+      "textLeft": 20,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#resume.resume.chapter",
+      "tag": "section",
+      "top": 6274,
+      "height": 697,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Resume, My Story.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 25,
+      "textLeft": 20,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.faq.chapter",
+      "tag": "section",
+      "top": 6971,
+      "height": 619,
+      "words": 128,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.cta.chapter",
+      "tag": "section",
+      "top": 7590,
+      "height": 760,
+      "words": 32,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's Work Together.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 38,
+      "textLeft": 20,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.chapter",
+      "tag": "footer",
+      "top": 8349,
+      "height": 844,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 32,
+      "textLeft": 20,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stories that move pipelines.",
+      "size": 48,
+      "top": 476,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 44
+     }
+    ],
+    "leftBlocks": 44,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 50px on the left, 98px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\desktop-page-01.jpg",
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\desktop-page-02.jpg",
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\tablet-page-01.jpg",
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\mobile-page-01.jpg",
+    "C:\\Users\\bnhviet\\Documents\\Project\\personal-brand\\personal-brand\\.taste-skill\\inspect\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
