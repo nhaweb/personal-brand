@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 
 declare global {
@@ -10,11 +11,23 @@ declare global {
   }
 }
 
+function scrollToTop() {
+  const lenis = window.__lenis;
+  if (lenis) {
+    lenis.scrollTo(0, { immediate: true });
+  } else {
+    window.scrollTo(0, 0);
+  }
+}
+
 export default function LenisProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const prevPath = useRef(pathname);
+
   useEffect(() => {
     document.documentElement.classList.add("js");
 
@@ -43,6 +56,14 @@ export default function LenisProvider({
       window.__lenis = undefined;
     };
   }, []);
+
+  // Lenis keeps its own scroll offset across App Router navigations.
+  useEffect(() => {
+    if (prevPath.current === pathname) return;
+    prevPath.current = pathname;
+    if (window.location.hash) return;
+    scrollToTop();
+  }, [pathname]);
 
   return children;
 }
