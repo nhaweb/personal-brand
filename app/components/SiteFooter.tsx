@@ -19,7 +19,7 @@ export default function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="wrap site-footer__top">
-        <Link className="site-footer__brand" href="/#top" aria-label="PML">
+        <Link className="site-footer__brand" href="/" aria-label="PML">
           <Image
             className="site-footer__logo"
             src="/images/pml-logo-orange.png"

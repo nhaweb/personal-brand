@@ -134,7 +134,7 @@ export default function SiteHeader() {
     <>
       <header className="site-header">
         <div className="site-header__bar wrap">
-          <Link className="site-header__brand" href="/#top" aria-label="PML">
+          <Link className="site-header__brand" href="/" aria-label="PML">
             <Image
               className="site-header__logo"
               src="/images/pml-logo-orange.png"
