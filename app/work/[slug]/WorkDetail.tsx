@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Arrow from "../../components/Arrow";
 import SiteFooter from "../../components/SiteFooter";
-import SiteHeader from "../../components/SiteHeader";
 import { useLocale } from "../../i18n/LocaleProvider";
 
 export default function WorkDetail({ slug }: { slug: string }) {
@@ -19,8 +18,6 @@ export default function WorkDetail({ slug }: { slug: string }) {
 
   return (
     <>
-      <SiteHeader />
-
       <main id="top">
         <article className="case">
           <header className="wrap case__head">
@@ -168,7 +165,7 @@ export default function WorkDetail({ slug }: { slug: string }) {
               <h2 className="cta__title" id="case-cta-heading" data-reveal>
                 {t.cta.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-48" data-reveal data-i="1">
                 {t.cta.lead}
               </p>
               <div className="button-row" data-reveal data-i="2">
@@ -180,11 +177,11 @@ export default function WorkDetail({ slug }: { slug: string }) {
             </div>
             <a
               className="cta__mail"
-              href="mailto:nhaweb.vn@gmail.com"
+              href="mailto:pmluanvn@gmail.com"
               data-reveal
               data-i="3"
             >
-              nhaweb.vn@gmail.com
+              pmluanvn@gmail.com
             </a>
           </div>
         </section>

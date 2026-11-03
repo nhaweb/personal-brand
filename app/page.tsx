@@ -7,7 +7,6 @@ import Arrow from "./components/Arrow";
 import BandVideo from "./components/BandVideo";
 import Fold from "./components/Fold";
 import SiteFooter from "./components/SiteFooter";
-import SiteHeader from "./components/SiteHeader";
 import { useLocale } from "./i18n/LocaleProvider";
 
 const Logo3D = dynamic(() => import("./components/Logo3D"), {
@@ -26,19 +25,19 @@ export default function Home() {
 
   return (
     <>
-      <SiteHeader />
-
       <main id="top">
         <section className="start" aria-labelledby="hero-heading">
-          <div className="wrap start__intro">
-            <h1 className="start__title" id="hero-heading" data-reveal>
-              {t.hero.title}
-            </h1>
-            <p className="start__lead gray" data-reveal data-i="1">
-              {t.hero.lead}
-            </p>
-            <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+          <div className="wrap start__intro grid grid-cols-3 gap-4">
+           
+              <div className="col-span-2 flex flex-col gap-5">
+                <h1 className="start__title" id="hero-heading" data-reveal>
+                  {t.hero.title}
+                </h1>
+                <p className="start__lead gray" data-reveal data-i="1">
+                  {t.hero.lead}
+                </p>
+                <div className="button-row" data-reveal data-i="2">
+              <a className="text-link" href="mailto:pmluanvn@gmail.com">
                 {t.common.writeEmail}
               </a>
               <Link className="btn btn--accent" href="/contact">
@@ -46,6 +45,12 @@ export default function Home() {
                 <Arrow />
               </Link>
             </div>
+              </div>
+              <Image src="/images/banner/luan-pham-profile.webp" alt={t.hero.imageAlt} width={1920} height={1080} />
+          
+
+
+         
           </div>
 
           <div className="wrap start__media" data-reveal="media">
@@ -90,12 +95,12 @@ export default function Home() {
               <h2 className="display-lg" id="work-heading" data-reveal>
                 {t.work.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-w-[85%]" data-reveal data-i="1">
                 {t.work.lead}
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+              <a className="text-link" href="mailto:pmluanvn@gmail.com">
                 {t.common.writeEmail}
               </a>
               <Link className="btn btn--accent" href="/contact">
@@ -143,10 +148,10 @@ export default function Home() {
               <h2 className="display-lg" id="band-heading" data-reveal>
                 {t.band.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="max-48" data-reveal data-i="1">
                 {t.band.lead}
               </p>
-              <a className="btn btn--accent" href="#contact" data-reveal data-i="2">
+              <a className="btn btn--soft" href="#contact" data-reveal data-i="2">
                 {t.common.getInTouch}
                 <Arrow />
               </a>
@@ -163,12 +168,12 @@ export default function Home() {
               <h2 className="display-lg" id="services-heading" data-reveal>
                 {t.services.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-48" data-reveal data-i="1">
                 {t.services.lead}
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+              <a className="text-link" href="mailto:pmluanvn@gmail.com">
                 {t.common.writeEmail}
               </a>
               <Link className="btn btn--accent" href="/contact">
@@ -210,12 +215,12 @@ export default function Home() {
               <h2 className="display-lg" id="resume-heading" data-reveal>
                 {t.resume.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-48" data-reveal data-i="1">
                 {t.resume.lead}
               </p>
             </div>
             <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+              <a className="text-link" href="mailto:pmluanvn@gmail.com">
                 {t.common.writeEmail}
               </a>
               <Link className="btn btn--accent" href="/contact">
@@ -253,10 +258,10 @@ export default function Home() {
               <h2 className="display-lg" id="faq-heading" data-reveal>
                 {t.faq.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-48" data-reveal data-i="1">
                 {t.faq.lead}
               </p>
-              <a className="btn btn--soft" href="#contact" data-reveal data-i="2">
+              <a className="btn btn--accent" href="#contact" data-reveal data-i="2">
                 {t.common.getInTouch}
                 <Arrow />
               </a>
@@ -288,11 +293,11 @@ export default function Home() {
               <h2 className="cta__title" id="cta-heading" data-reveal>
                 {t.cta.title}
               </h2>
-              <p className="gray max-36" data-reveal data-i="1">
+              <p className="gray max-48" data-reveal data-i="1">
                 {t.cta.lead}
               </p>
               <div className="button-row" data-reveal data-i="2">
-                <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+                <a className="text-link" href="mailto:pmluanvn@gmail.com">
                   {t.common.writeEmail}
                 </a>
                 <Link className="btn btn--accent" href="/contact">

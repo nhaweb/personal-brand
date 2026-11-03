@@ -27,7 +27,7 @@ export default function ContactForm({ className = "" }: { className?: string }) 
         note,
       ].join("\n"),
     );
-    window.location.href = `mailto:nhaweb.vn@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:pmluanvn@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return (

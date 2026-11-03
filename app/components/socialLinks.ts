@@ -1,5 +1,6 @@
 export const socialLinks = [
-  { href: "https://www.linkedin.com", label: "LinkedIn" },
-  { href: "mailto:nhaweb.vn@gmail.com", label: "Email" },
-  { href: "https://www.instagram.com", label: "Instagram" },
+  { href: "https://www.linkedin.com/in/pmlvietnam/", label: "LinkedIn" },
+  { href: "https://www.facebook.com/pmlvietnam.vn/", label: "Facebook" },
+  { href: "https://x.com/pmlvietnam", label: "Twitter" },
+  { href: "https://www.tiktok.com/@pmlvietnam.vn", label: "TikTok" },
 ];

@@ -148,9 +148,9 @@ export type Dictionary = {
 
 const en: Dictionary = {
   meta: {
-    title: "Việt · Marketing & growth",
+    title: "Việt · PML · Marketing & growth",
     description:
-      "Personal brand of Việt: marketing and growth with clear stories and steady pipelines.",
+      "Personal brand of Việt (PML): marketing and growth with clear stories and steady pipelines.",
   },
   nav: {
     work: "Work",
@@ -537,9 +537,9 @@ const en: Dictionary = {
 
 const vi: Dictionary = {
   meta: {
-    title: "Việt · Marketing & tăng trưởng",
+    title: "Việt · PML · Marketing & tăng trưởng",
     description:
-      "Thương hiệu cá nhân của Việt: marketing và tăng trưởng với câu chuyện rõ ràng cùng đường dẫn khách hàng ổn định.",
+      "Thương hiệu cá nhân của Việt (PML): marketing và tăng trưởng với câu chuyện rõ ràng cùng đường dẫn khách hàng ổn định.",
   },
   nav: {
     work: "Dự án",

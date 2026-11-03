@@ -15,8 +15,8 @@
   --accent-ink: #160e08;
   --accent-soft: #ffd8c4;
 
-  --font-display: "Archivo", sans-serif;
-  --font-text: "Inter Tight", sans-serif;
+  --font-display: var(--font-archivo), "Archivo", sans-serif;
+  --font-text: var(--font-inter-tight), "Inter Tight", sans-serif;
 
   --step-small: 0.875rem;
   --step-body: 1.125rem;
@@ -157,7 +157,6 @@ button {
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 0.92;
-  text-wrap: balance;
 }
 
 /* ---------- controls ---------- */
@@ -542,7 +541,7 @@ button {
 .start {
   position: relative;
   isolation: isolate;
-  padding-top: clamp(7rem, 14vw, 12rem);
+  padding-top: 1rem;
   padding-bottom: var(--section);
   background: var(--bg);
 }
@@ -583,8 +582,8 @@ button {
   font-size: clamp(3.5rem, 2.2rem + 7vw, 8rem);
   font-weight: 400;
   letter-spacing: -0.04em;
-  line-height: 0.9;
-  max-width: 15ch;
+  line-height: 1;
+  max-width: 80% !important;
   text-wrap: balance;
 }
 
@@ -634,12 +633,8 @@ button {
 }
 
 /* ---------- work ---------- */
-
-.work,
 .services,
-.resume,
 .faq,
-.cta,
 .band {
   padding-block: var(--section);
 }
@@ -701,7 +696,6 @@ button {
 }
 
 .work-card__blurb {
-  max-width: 42ch;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -766,6 +760,7 @@ button {
   display: grid;
   gap: 1.25rem;
   justify-items: start;
+  color: white;
 }
 
 .band__media {
@@ -1243,7 +1238,6 @@ button {
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.92;
-  max-width: 10ch;
 }
 
 .cta__stage {

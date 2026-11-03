@@ -234,7 +234,7 @@ export default function SiteHeader() {
             {t.common.contactForm}
             <Arrow />
           </button>
-          <a className="text-link" href="mailto:nhaweb.vn@gmail.com">
+          <a className="text-link" href="mailto:pmluanvn@gmail.com">
             {t.common.writeEmail}
           </a>
         </div>

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Arrow from "../components/Arrow";
 import ContactForm from "../components/ContactForm";
 import SiteFooter from "../components/SiteFooter";
-import SiteHeader from "../components/SiteHeader";
 import { socialLinks } from "../components/socialLinks";
 import { useLocale } from "../i18n/LocaleProvider";
 
@@ -14,8 +13,6 @@ export default function ContactContent() {
 
   return (
     <>
-      <SiteHeader />
-
       <main id="top">
         <section className="contact-page" aria-labelledby="contact-heading">
           <div className="wrap contact-page__grid">
@@ -23,7 +20,7 @@ export default function ContactContent() {
               <h1 className="display-lg" id="contact-heading" data-reveal>
                 {t.contact.title}
               </h1>
-              <p className="contact-page__lead max-36" data-reveal data-i="1">
+              <p className="contact-page__lead max-48" data-reveal data-i="1">
                 {t.contact.lead}
               </p>
               <div className="contact-page__form" data-reveal data-i="2">
@@ -34,11 +31,11 @@ export default function ContactContent() {
             <div className="contact-page__side">
               <div className="media-shell contact-page__portrait" data-reveal="media">
                 <Image
-                  src="/images/ai/about-portrait.jpg"
+                  src="/images/banner/luan-pham-profile.webp"
                   alt={t.hero.imageAlt}
                   width={864}
                   height={1152}
-                  className="media-shell__img"
+                  className="media-shell__img object-top"
                   sizes="(max-width: 960px) 100vw, 45vw"
                 />
               </div>
@@ -48,9 +45,9 @@ export default function ContactContent() {
                   <p className="gray">{t.contact.emailLabel}</p>
                   <a
                     className="text-link contact-aside__value"
-                    href="mailto:nhaweb.vn@gmail.com"
+                    href="mailto:pmluanvn@gmail.com"
                   >
-                    nhaweb.vn@gmail.com
+                    pmluanvn@gmail.com
                   </a>
                 </div>
 

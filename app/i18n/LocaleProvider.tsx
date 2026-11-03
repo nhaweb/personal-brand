@@ -43,12 +43,8 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!ready) return;
+    // Keep server-rendered title/description intact for SEO; only sync lang + storage.
     document.documentElement.lang = locale;
-    document.title = dictionaries[locale].meta.title;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", dictionaries[locale].meta.description);
-    }
     window.localStorage.setItem(STORAGE_KEY, locale);
   }, [locale, ready]);
 

@@ -9,18 +9,41 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: PageProps<'/work/[slug]'>,
+  props: PageProps<"/work/[slug]">,
 ): Promise<Metadata> {
   const { slug } = await props.params;
   const item = dictionaries.en.work.items.find((i) => i.slug === slug);
   if (!item) return {};
+
+  const path = `/work/${item.slug}`;
   return {
-    title: `${item.name} · ${dictionaries.en.meta.title}`,
+    title: item.name,
     description: item.blurb,
+    alternates: {
+      canonical: path,
+    },
+    openGraph: {
+      title: item.name,
+      description: item.blurb,
+      url: path,
+      type: "article",
+      images: [
+        {
+          url: item.image,
+          alt: item.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: item.name,
+      description: item.blurb,
+      images: [item.image],
+    },
   };
 }
 
-export default async function WorkPage(props: PageProps<'/work/[slug]'>) {
+export default async function WorkPage(props: PageProps<"/work/[slug]">) {
   const { slug } = await props.params;
   const item = dictionaries.en.work.items.find((i) => i.slug === slug);
   if (!item) notFound();
