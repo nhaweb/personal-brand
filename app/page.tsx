@@ -27,30 +27,34 @@ export default function Home() {
     <>
       <main id="top">
         <section className="start" aria-labelledby="hero-heading">
-          <div className="wrap start__intro grid grid-cols-3 gap-4">
-           
-              <div className="col-span-2 flex flex-col gap-5">
-                <h1 className="start__title" id="hero-heading" data-reveal>
-                  {t.hero.title}
-                </h1>
-                <p className="start__lead gray" data-reveal data-i="1">
-                  {t.hero.lead}
-                </p>
-                <div className="button-row" data-reveal data-i="2">
-              <a className="text-link" href="mailto:pmluanvn@gmail.com">
-                {t.common.writeEmail}
-              </a>
-              <Link className="btn btn--accent" href="/contact">
-                {t.common.contactForm}
-                <Arrow />
-              </Link>
-            </div>
+          <div className="wrap start__intro grid grid-cols-3 gap-4 items-center">
+            <div className="col-span-2 flex flex-col gap-5">
+              <h1 className="start__title" id="hero-heading" data-reveal>
+                {t.hero.title}
+              </h1>
+              <p className="start__lead gray" data-reveal data-i="1">
+                {t.hero.lead}
+              </p>
+              <div className="button-row" data-reveal data-i="2">
+                <a className="text-link" href="mailto:pmluanvn@gmail.com">
+                  {t.common.writeEmail}
+                </a>
+                <Link className="btn btn--accent" href="/contact">
+                  {t.common.contactForm}
+                  <Arrow />
+                </Link>
               </div>
-              <Image src="/images/banner/luan-pham-profile.webp" alt={t.hero.imageAlt} width={1920} height={1080} />
-          
-
-
-         
+            </div>
+            <div className="media-shell" style={{ aspectRatio: "3 / 4" }}>
+              <Image
+                src="/images/banner/luan-pham-profile.webp"
+                alt={t.hero.imageAlt}
+                width={864}
+                height={1152}
+                className="media-shell__img object-top"
+                sizes="(max-width: 960px) 100vw, 33vw"
+              />
+            </div>
           </div>
 
           <div className="wrap start__media" data-reveal="media">
