@@ -639,6 +639,11 @@ button {
   padding-block: var(--section);
 }
 
+
+.work {
+  padding-bottom: var(--section);
+}
+
 .work__head {
   display: grid;
   gap: 1.75rem;
